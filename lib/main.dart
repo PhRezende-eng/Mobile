@@ -37,50 +37,45 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.grey.shade900,
-                    ),
-                    SizedBox(
-                      width: 10.0,
-                    ),
-                    Text(
-                      '+55 61 98233-7608',
-                      style: TextStyle(
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+              SizedBox(
+                width: 150.0,
+                height: 20.0,
+                child: Divider(  
+                  color: Colors.white,
                 ),
               ),
-              Container(
-                padding: EdgeInsets.all(10.0),
+              Card(
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 color: Colors.white,
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.grey.shade900,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.phone,
+                    color: Colors.grey.shade900,
+                  ),
+                  title: Text(
+                    '+55 61 98233-7608',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    SizedBox(
-                      width: 10.0,
+                  ),
+                ),
+              ),
+              Card(
+                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                color: Colors.white,
+                child: ListTile(
+                  leading: Icon(
+                    Icons.email,
+                    color: Colors.grey.shade900,
+                  ),
+                  title: Text(
+                    'ph.hr.001@gmail.com',
+                    style: TextStyle(
+                      fontFamily: 'Source Sans Pro',
+                      fontSize: 20.0,
                     ),
-                    Text(
-                      'ph.hr.001@gmail.com',
-                      style: TextStyle(
-                        fontFamily: 'Source Sans Pro',
-                        fontSize: 20.0,
-                      ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
             ],
@@ -91,6 +86,32 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// SizedBox( -> parra criar uma caixa de separação invisível
+//   width: 10.0,
+// ),
+
+// children: <Widget>[] -> No Row
+
+// padding: EdgeInsets.all(10.0), -> Container
+
+//  Row(
+//                   children: <Widget>[
+//                     Icon(
+//                       Icons.email,
+//                       color: Colors.grey.shade900,
+//                     ),
+//                     SizedBox(
+//                       width: 10.0,
+//                     ),
+//                     Text(
+//                       'ph.hr.001@gmail.com',
+//                       style: TextStyle(
+//                         fontFamily: 'Source Sans Pro',
+//                         fontSize: 20.0,
+//                       ),
+//                     ),
+//                   ],
+//                 ),
 
 //class MyApp extends StatelessWidget {
 //  @override
@@ -183,3 +204,27 @@ class MyApp extends StatelessWidget {
 //    );
 //  }
 //}
+
+//  Container( -> para preechimento de dados
+//                 padding: EdgeInsets.all(0.0),
+//                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+//                 color: Colors.white,
+//                 child: Row(
+//                   children: <Widget>[
+//                     Icon(
+//                       Icons.phone,
+//                       color: Colors.grey.shade900,
+//                     ),
+//                     SizedBox(
+//                       width: 10.0,
+//                     ),
+//                     Text(
+//                       '+55 61 98233-7608',
+//                       style: TextStyle(
+//                         fontFamily: 'Source Sans Pro',
+//                         fontSize: 20.0,
+//                       ),
+//                     ),
+//                   ],
+//                 ),
+//               ),
